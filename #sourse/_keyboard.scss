@@ -105,3 +105,10 @@ body {
 	margin: 50px auto;
 	border: 1px solid black;
 }
+
+.active {
+	transition-duration: 0.5s;
+	background-color: wheat;
+	box-shadow: 5px 5px 5px black;
+	border-radius: 20px;
+}

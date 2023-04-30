@@ -229,6 +229,13 @@ body {
   border: 1px solid black;
 }
 
-.red {
-  background-color: red;
+.active {
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background-color: wheat;
+  -webkit-box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px black;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
 }
