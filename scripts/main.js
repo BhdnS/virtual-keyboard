@@ -9,12 +9,102 @@ const lineFive = document.createElement('div');
 textarea.innerHTML = '<textarea class="textarea" autofocus name="" id="" cols="100" rows="10"></textarea>';
 document.body.append(textarea);
 
-keyboard.classList = 'keyboard';
-document.body.append(keyboard);
+// keyboard.classList = 'keyboard';
+// document.body.append(keyboard);
+
+// lineOne.classList = 'keyboard__line';
+// lineOne.innerHTML = `
+// <div class="keyboard__key tilde">ё</div>
+// <div class="keyboard__key">1</div>
+// <div class="keyboard__key">2</div>
+// <div class="keyboard__key">3</div>
+// <div class="keyboard__key">4</div>
+// <div class="keyboard__key">5</div>
+// <div class="keyboard__key">6</div>
+// <div class="keyboard__key">7</div>
+// <div class="keyboard__key">8</div>
+// <div class="keyboard__key">9</div>
+// <div class="keyboard__key">0</div>
+// <div class="keyboard__key">-</div>
+// <div class="keyboard__key">=</div>
+// <div class="keyboard__key backspace">Backspace</div>`;
+// keyboard.appendChild(lineOne);
+
+// lineTwo.classList = 'keyboard__line';
+// lineTwo.innerHTML = `
+// <div class="keyboard__key tab">Tab</div>
+// <div class="keyboard__key">Й</div>
+// <div class="keyboard__key">Ц</div>
+// <div class="keyboard__key">У</div>
+// <div class="keyboard__key">К</div>
+// <div class="keyboard__key">Е</div>
+// <div class="keyboard__key">Н</div>
+// <div class="keyboard__key">Г</div>
+// <div class="keyboard__key">Ш</div>
+// <div class="keyboard__key">Щ</div>
+// <div class="keyboard__key">З</div>
+// <div class="keyboard__key">Х</div>
+// <div class="keyboard__key">Ъ</div>
+// <div class="keyboard__key slash">\\</div>`;
+// keyboard.appendChild(lineTwo);
+
+// lineThree.classList = 'keyboard__line';
+// lineThree.innerHTML = `
+// <div class="keyboard__key caps-lock">Caps Lock</div>
+// <div class="keyboard__key">Ф</div>
+// <div class="keyboard__key">Ы</div>
+// <div class="keyboard__key">В</div>
+// <div class="keyboard__key">А</div>
+// <div class="keyboard__key">П</div>
+// <div class="keyboard__key">Р</div>
+// <div class="keyboard__key">О</div>
+// <div class="keyboard__key">Л</div>
+// <div class="keyboard__key">Д</div>
+// <div class="keyboard__key">Ж</div>
+// <div class="keyboard__key">Э</div>
+// <div class="keyboard__key enter">Enter</div>`;
+// keyboard.appendChild(lineThree);
+
+// lineFour.classList = 'keyboard__line';
+// lineFour.innerHTML = `
+// <div class="keyboard__key shift shift__left">Shift</div>
+// <div class="keyboard__key">Я</div>
+// <div class="keyboard__key">Ч</div>
+// <div class="keyboard__key">С</div>
+// <div class="keyboard__key">М</div>
+// <div class="keyboard__key">И</div>
+// <div class="keyboard__key">Т</div>
+// <div class="keyboard__key">Ь</div>
+// <div class="keyboard__key">Б</div>
+// <div class="keyboard__key">Ю</div>
+// <div class="keyboard__key">.</div>
+// <div class="keyboard__key shift shift__right">Shift</div>`;
+// keyboard.appendChild(lineFour);
+
+// lineFive.classList = 'keyboard__line';
+// lineFive.innerHTML = `
+// <div class="keyboard__key left__ctrl">Ctrl</div>
+// <div class="keyboard__key win">Win</div>
+// <div class="keyboard__key alt__left">Alt</div>
+// <div class="keyboard__key space"></div>
+// <div class="keyboard__key alt__right">Alt</div>
+// <div class="keyboard__key right__ctrl">Ctrl</div>
+// <div class="keyboard__key arrow__left">&larr;</div>
+// <div class="arrow">
+//   <div class="keyboard__key up">&uarr;</div>
+//   <div class="keyboard__key down">&darr;</div>
+// </div>
+// <div class="keyboard__key arrow__right">&rarr;</div>`;
+// keyboard.appendChild(lineFive);
+
+const keyboardEn = document.createElement('div');
+
+keyboardEn.classList = 'keyboard';
+document.body.append(keyboardEn);
 
 lineOne.classList = 'keyboard__line';
 lineOne.innerHTML = `
-<div class="keyboard__key tilde">ё</div>
+<div class="keyboard__key tilde">\`</div>
 <div class="keyboard__key">1</div>
 <div class="keyboard__key">2</div>
 <div class="keyboard__key">3</div>
@@ -28,58 +118,58 @@ lineOne.innerHTML = `
 <div class="keyboard__key">-</div>
 <div class="keyboard__key">=</div>
 <div class="keyboard__key backspace">Backspace</div>`;
-keyboard.appendChild(lineOne);
+keyboardEn.appendChild(lineOne);
 
 lineTwo.classList = 'keyboard__line';
 lineTwo.innerHTML = `
 <div class="keyboard__key tab">Tab</div>
-<div class="keyboard__key">Й</div>
-<div class="keyboard__key">Ц</div>
-<div class="keyboard__key">У</div>
-<div class="keyboard__key">К</div>
-<div class="keyboard__key">Е</div>
-<div class="keyboard__key">Н</div>
-<div class="keyboard__key">Г</div>
-<div class="keyboard__key">Ш</div>
-<div class="keyboard__key">Щ</div>
-<div class="keyboard__key">З</div>
-<div class="keyboard__key">Х</div>
-<div class="keyboard__key">Ъ</div>
+<div class="keyboard__key">Q</div>
+<div class="keyboard__key">W</div>
+<div class="keyboard__key">E</div>
+<div class="keyboard__key">R</div>
+<div class="keyboard__key">T</div>
+<div class="keyboard__key">Y</div>
+<div class="keyboard__key">U</div>
+<div class="keyboard__key">I</div>
+<div class="keyboard__key">O</div>
+<div class="keyboard__key">P</div>
+<div class="keyboard__key">[</div>
+<div class="keyboard__key">]</div>
 <div class="keyboard__key slash">\\</div>`;
-keyboard.appendChild(lineTwo);
+keyboardEn.appendChild(lineTwo);
 
 lineThree.classList = 'keyboard__line';
 lineThree.innerHTML = `
 <div class="keyboard__key caps-lock">Caps Lock</div>
-<div class="keyboard__key">Ф</div>
-<div class="keyboard__key">Ы</div>
-<div class="keyboard__key">В</div>
-<div class="keyboard__key">А</div>
-<div class="keyboard__key">П</div>
-<div class="keyboard__key">Р</div>
-<div class="keyboard__key">О</div>
-<div class="keyboard__key">Л</div>
-<div class="keyboard__key">Д</div>
-<div class="keyboard__key">Ж</div>
-<div class="keyboard__key">Э</div>
+<div class="keyboard__key">A</div>
+<div class="keyboard__key">S</div>
+<div class="keyboard__key">D</div>
+<div class="keyboard__key">F</div>
+<div class="keyboard__key">G</div>
+<div class="keyboard__key">H</div>
+<div class="keyboard__key">J</div>
+<div class="keyboard__key">K</div>
+<div class="keyboard__key">L</div>
+<div class="keyboard__key">;</div>
+<div class="keyboard__key">'</div>
 <div class="keyboard__key enter">Enter</div>`;
-keyboard.appendChild(lineThree);
+keyboardEn.appendChild(lineThree);
 
 lineFour.classList = 'keyboard__line';
 lineFour.innerHTML = `
 <div class="keyboard__key shift shift__left">Shift</div>
-<div class="keyboard__key">Я</div>
-<div class="keyboard__key">Ч</div>
-<div class="keyboard__key">С</div>
-<div class="keyboard__key">М</div>
-<div class="keyboard__key">И</div>
-<div class="keyboard__key">Т</div>
-<div class="keyboard__key">Ь</div>
-<div class="keyboard__key">Б</div>
-<div class="keyboard__key">Ю</div>
+<div class="keyboard__key">Z</div>
+<div class="keyboard__key">X</div>
+<div class="keyboard__key">C</div>
+<div class="keyboard__key">V</div>
+<div class="keyboard__key">B</div>
+<div class="keyboard__key">N</div>
+<div class="keyboard__key">M</div>
+<div class="keyboard__key">,</div>
 <div class="keyboard__key">.</div>
+<div class="keyboard__key">/</div>
 <div class="keyboard__key shift shift__right">Shift</div>`;
-keyboard.appendChild(lineFour);
+keyboardEn.appendChild(lineFour);
 
 lineFive.classList = 'keyboard__line';
 lineFive.innerHTML = `
@@ -95,7 +185,7 @@ lineFive.innerHTML = `
   <div class="keyboard__key down">&darr;</div>
 </div>
 <div class="keyboard__key arrow__right">&rarr;</div>`;
-keyboard.appendChild(lineFive);
+keyboardEn.appendChild(lineFive);
 
 const keys = document.querySelectorAll('.keyboard__key');
 
