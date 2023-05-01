@@ -245,3 +245,19 @@ function mouseClick(e) {
 
 const key = document.getElementsByClassName('keyboard__key');
 [...key].forEach((item) => item.addEventListener('click', mouseClick));
+
+document.addEventListener('mousedown', (e) => {
+  for (let i = 0; i < keys.length; i++) {
+    if (e.target == keys[i] || e.key == keys[i]) {
+      keys[i].classList.toggle('active');
+    }
+  }
+});
+
+document.addEventListener('mouseup', (e) => {
+  for (let i = 0; i < keys.length; i++) {
+    if (e.target == keys[i] || e.key == keys[i]) {
+      keys[i].classList.toggle('active');
+    }
+  }
+});

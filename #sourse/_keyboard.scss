@@ -94,13 +94,6 @@ body {
 	justify-content: space-between;
 }
 
-.keyboard__key:hover {
-	transition-duration: 0.5s;
-	background-color: wheat;
-	box-shadow: 5px 5px 5px black;
-	border-radius: 20px;
-}
-
 .textarea {
 	display: block;
 	margin: 50px auto;
