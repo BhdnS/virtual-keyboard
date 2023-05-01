@@ -129,6 +129,7 @@ window.addEventListener('keydown', (e) => {
     }
     if (e.code == 'AltLeft') {
       altRight.classList.remove('active');
+      ctrlLeft.classList.remove('active');
     }
     if (e.code == 'AltRight') {
       altLeft.classList.remove('active');
