@@ -238,6 +238,8 @@ window.addEventListener('keyup', (e) => {
   }
 });
 
+const area = document.getElementById('area');
+
 function mouseClick(e) {
   const { action } = e.target.dataset;
   area.value += String.fromCharCode(action);
