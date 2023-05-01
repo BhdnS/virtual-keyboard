@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const textarea = document.createElement('div');
 const keyboard = document.createElement('div');
 const lineOne = document.createElement('div');
@@ -6,186 +7,96 @@ const lineThree = document.createElement('div');
 const lineFour = document.createElement('div');
 const lineFive = document.createElement('div');
 
-textarea.innerHTML = '<textarea class="textarea" autofocus name="" id="" cols="100" rows="10"></textarea>';
+textarea.innerHTML = '<textarea class="textarea" autofocus name="" id="area" cols="100" rows="10"></textarea>';
 document.body.append(textarea);
 
-// keyboard.classList = 'keyboard';
-// document.body.append(keyboard);
-
-// lineOne.classList = 'keyboard__line';
-// lineOne.innerHTML = `
-// <div class="keyboard__key tilde">ё</div>
-// <div class="keyboard__key">1</div>
-// <div class="keyboard__key">2</div>
-// <div class="keyboard__key">3</div>
-// <div class="keyboard__key">4</div>
-// <div class="keyboard__key">5</div>
-// <div class="keyboard__key">6</div>
-// <div class="keyboard__key">7</div>
-// <div class="keyboard__key">8</div>
-// <div class="keyboard__key">9</div>
-// <div class="keyboard__key">0</div>
-// <div class="keyboard__key">-</div>
-// <div class="keyboard__key">=</div>
-// <div class="keyboard__key backspace">Backspace</div>`;
-// keyboard.appendChild(lineOne);
-
-// lineTwo.classList = 'keyboard__line';
-// lineTwo.innerHTML = `
-// <div class="keyboard__key tab">Tab</div>
-// <div class="keyboard__key">Й</div>
-// <div class="keyboard__key">Ц</div>
-// <div class="keyboard__key">У</div>
-// <div class="keyboard__key">К</div>
-// <div class="keyboard__key">Е</div>
-// <div class="keyboard__key">Н</div>
-// <div class="keyboard__key">Г</div>
-// <div class="keyboard__key">Ш</div>
-// <div class="keyboard__key">Щ</div>
-// <div class="keyboard__key">З</div>
-// <div class="keyboard__key">Х</div>
-// <div class="keyboard__key">Ъ</div>
-// <div class="keyboard__key slash">\\</div>`;
-// keyboard.appendChild(lineTwo);
-
-// lineThree.classList = 'keyboard__line';
-// lineThree.innerHTML = `
-// <div class="keyboard__key caps-lock">Caps Lock</div>
-// <div class="keyboard__key">Ф</div>
-// <div class="keyboard__key">Ы</div>
-// <div class="keyboard__key">В</div>
-// <div class="keyboard__key">А</div>
-// <div class="keyboard__key">П</div>
-// <div class="keyboard__key">Р</div>
-// <div class="keyboard__key">О</div>
-// <div class="keyboard__key">Л</div>
-// <div class="keyboard__key">Д</div>
-// <div class="keyboard__key">Ж</div>
-// <div class="keyboard__key">Э</div>
-// <div class="keyboard__key enter">Enter</div>`;
-// keyboard.appendChild(lineThree);
-
-// lineFour.classList = 'keyboard__line';
-// lineFour.innerHTML = `
-// <div class="keyboard__key shift shift__left">Shift</div>
-// <div class="keyboard__key">Я</div>
-// <div class="keyboard__key">Ч</div>
-// <div class="keyboard__key">С</div>
-// <div class="keyboard__key">М</div>
-// <div class="keyboard__key">И</div>
-// <div class="keyboard__key">Т</div>
-// <div class="keyboard__key">Ь</div>
-// <div class="keyboard__key">Б</div>
-// <div class="keyboard__key">Ю</div>
-// <div class="keyboard__key">.</div>
-// <div class="keyboard__key shift shift__right">Shift</div>`;
-// keyboard.appendChild(lineFour);
-
-// lineFive.classList = 'keyboard__line';
-// lineFive.innerHTML = `
-// <div class="keyboard__key left__ctrl">Ctrl</div>
-// <div class="keyboard__key win">Win</div>
-// <div class="keyboard__key alt__left">Alt</div>
-// <div class="keyboard__key space"></div>
-// <div class="keyboard__key alt__right">Alt</div>
-// <div class="keyboard__key right__ctrl">Ctrl</div>
-// <div class="keyboard__key arrow__left">&larr;</div>
-// <div class="arrow">
-//   <div class="keyboard__key up">&uarr;</div>
-//   <div class="keyboard__key down">&darr;</div>
-// </div>
-// <div class="keyboard__key arrow__right">&rarr;</div>`;
-// keyboard.appendChild(lineFive);
-
-const keyboardEn = document.createElement('div');
-
-keyboardEn.classList = 'keyboard';
-document.body.append(keyboardEn);
+keyboard.classList = 'keyboard';
+document.body.append(keyboard);
 
 lineOne.classList = 'keyboard__line';
 lineOne.innerHTML = `
-<div class="keyboard__key tilde">\`</div>
-<div class="keyboard__key">1</div>
-<div class="keyboard__key">2</div>
-<div class="keyboard__key">3</div>
-<div class="keyboard__key">4</div>
-<div class="keyboard__key">5</div>
-<div class="keyboard__key">6</div>
-<div class="keyboard__key">7</div>
-<div class="keyboard__key">8</div>
-<div class="keyboard__key">9</div>
-<div class="keyboard__key">0</div>
-<div class="keyboard__key">-</div>
-<div class="keyboard__key">=</div>
-<div class="keyboard__key backspace">Backspace</div>`;
-keyboardEn.appendChild(lineOne);
+<div data-action="192" class="keyboard__key tilde">\`</div>
+<div data-action="49" class="keyboard__key">1</div>
+<div data-action="50" class="keyboard__key">2</div>
+<div data-action="51" class="keyboard__key">3</div>
+<div data-action="52" class="keyboard__key">4</div>
+<div data-action="53" class="keyboard__key">5</div>
+<div data-action="54" class="keyboard__key">6</div>
+<div data-action="55" class="keyboard__key">7</div>
+<div data-action="56" class="keyboard__key">8</div>
+<div data-action="57" class="keyboard__key">9</div>
+<div data-action="48" class="keyboard__key">0</div>
+<div data-action="189" class="keyboard__key">-</div>
+<div data-action="187" class="keyboard__key">=</div>
+<div data-action="8" class="keyboard__key backspace">Backspace</div>`;
+keyboard.appendChild(lineOne);
 
 lineTwo.classList = 'keyboard__line';
 lineTwo.innerHTML = `
-<div class="keyboard__key tab">Tab</div>
-<div class="keyboard__key">Q</div>
-<div class="keyboard__key">W</div>
-<div class="keyboard__key">E</div>
-<div class="keyboard__key">R</div>
-<div class="keyboard__key">T</div>
-<div class="keyboard__key">Y</div>
-<div class="keyboard__key">U</div>
-<div class="keyboard__key">I</div>
-<div class="keyboard__key">O</div>
-<div class="keyboard__key">P</div>
-<div class="keyboard__key">[</div>
-<div class="keyboard__key">]</div>
-<div class="keyboard__key slash">\\</div>`;
-keyboardEn.appendChild(lineTwo);
+<div data-action="9" class="keyboard__key tab">Tab</div>
+<div data-action="81" class="keyboard__key">Q</div>
+<div data-action="87" class="keyboard__key">W</div>
+<div data-action="69" class="keyboard__key">E</div>
+<div data-action="82" class="keyboard__key">R</div>
+<div data-action="84" class="keyboard__key">T</div>
+<div data-action="89" class="keyboard__key">Y</div>
+<div data-action="85" class="keyboard__key">U</div>
+<div data-action="73" class="keyboard__key">I</div>
+<div data-action="79" class="keyboard__key">O</div>
+<div data-action="80" class="keyboard__key">P</div>
+<div data-action="219" class="keyboard__key">[</div>
+<div data-action="221" class="keyboard__key">]</div>
+<div data-action="220" class="keyboard__key slash">\\</div>`;
+keyboard.appendChild(lineTwo);
 
 lineThree.classList = 'keyboard__line';
 lineThree.innerHTML = `
-<div class="keyboard__key caps-lock">Caps Lock</div>
-<div class="keyboard__key">A</div>
-<div class="keyboard__key">S</div>
-<div class="keyboard__key">D</div>
-<div class="keyboard__key">F</div>
-<div class="keyboard__key">G</div>
-<div class="keyboard__key">H</div>
-<div class="keyboard__key">J</div>
-<div class="keyboard__key">K</div>
-<div class="keyboard__key">L</div>
-<div class="keyboard__key">;</div>
-<div class="keyboard__key">'</div>
-<div class="keyboard__key enter">Enter</div>`;
-keyboardEn.appendChild(lineThree);
+<div data-action="20" class="keyboard__key caps-lock">Caps Lock</div>
+<div data-action="65" class="keyboard__key">A</div>
+<div data-action="83" class="keyboard__key">S</div>
+<div data-action="68" class="keyboard__key">D</div>
+<div data-action="70" class="keyboard__key">F</div>
+<div data-action="71" class="keyboard__key">G</div>
+<div data-action="72" class="keyboard__key">H</div>
+<div data-action="74" class="keyboard__key">J</div>
+<div data-action="75" class="keyboard__key">K</div>
+<div data-action="76" class="keyboard__key">L</div>
+<div data-action="186" class="keyboard__key">;</div>
+<div data-action="222" class="keyboard__key">'</div>
+<div data-action="13" class="keyboard__key enter">Enter</div>`;
+keyboard.appendChild(lineThree);
 
 lineFour.classList = 'keyboard__line';
 lineFour.innerHTML = `
-<div class="keyboard__key shift shift__left">Shift</div>
-<div class="keyboard__key">Z</div>
-<div class="keyboard__key">X</div>
-<div class="keyboard__key">C</div>
-<div class="keyboard__key">V</div>
-<div class="keyboard__key">B</div>
-<div class="keyboard__key">N</div>
-<div class="keyboard__key">M</div>
-<div class="keyboard__key">,</div>
-<div class="keyboard__key">.</div>
-<div class="keyboard__key">/</div>
-<div class="keyboard__key shift shift__right">Shift</div>`;
-keyboardEn.appendChild(lineFour);
+<div data-action="16" class="keyboard__key shift shift__left">Shift</div>
+<div data-action="90" class="keyboard__key">Z</div>
+<div data-action="88" class="keyboard__key">X</div>
+<div data-action="67" class="keyboard__key">C</div>
+<div data-action="86" class="keyboard__key">V</div>
+<div data-action="66" class="keyboard__key">B</div>
+<div data-action="78" class="keyboard__key">N</div>
+<div data-action="77" class="keyboard__key">M</div>
+<div data-action="188" class="keyboard__key">,</div>
+<div data-action="190" class="keyboard__key">.</div>
+<div data-action="191" class="keyboard__key">/</div>
+<div data-action="16" class="keyboard__key shift shift__right">Shift</div>`;
+keyboard.appendChild(lineFour);
 
 lineFive.classList = 'keyboard__line';
 lineFive.innerHTML = `
-<div class="keyboard__key left__ctrl">Ctrl</div>
-<div class="keyboard__key win">Win</div>
-<div class="keyboard__key alt__left">Alt</div>
-<div class="keyboard__key space"></div>
-<div class="keyboard__key alt__right">Alt</div>
-<div class="keyboard__key right__ctrl">Ctrl</div>
-<div class="keyboard__key arrow__left">&larr;</div>
+<div data-action="17" class="keyboard__key left__ctrl">Ctrl</div>
+<div data-action="91" class="keyboard__key win">Win</div>
+<div data-action="18" class="keyboard__key alt__left">Alt</div>
+<div data-action="32" class="keyboard__key space"></div>
+<div data-action="18" class="keyboard__key alt__right">Alt</div>
+<div data-action="17" class="keyboard__key right__ctrl">Ctrl</div>
+<div data-action="37" class="keyboard__key arrow__left">&larr;</div>
 <div class="arrow">
-  <div class="keyboard__key up">&uarr;</div>
-  <div class="keyboard__key down">&darr;</div>
+  <div data-action="38" class="keyboard__key up">&uarr;</div>
+  <div data-action="40" class="keyboard__key down">&darr;</div>
 </div>
-<div class="keyboard__key arrow__right">&rarr;</div>`;
-keyboardEn.appendChild(lineFive);
+<div data-action="39" class="keyboard__key arrow__right">&rarr;</div>`;
+keyboard.appendChild(lineFive);
 
 const keys = document.querySelectorAll('.keyboard__key');
 
@@ -325,3 +236,11 @@ window.addEventListener('keyup', (e) => {
     }
   }
 });
+
+function mouseClick(e) {
+  const { action } = e.target.dataset;
+  area.value += String.fromCharCode(action);
+}
+
+const key = document.getElementsByClassName('keyboard__key');
+[...key].forEach((item) => item.addEventListener('click', mouseClick));
